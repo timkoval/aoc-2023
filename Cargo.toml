@@ -1,8 +1,45 @@
-[package]
-name = "template"
-version = "0.1.0"
+[workspace]
+members = [
+    "2023",
+    "common",
+    "utils",
+]
+resolver = "2"
+
+[workspace.package]
 edition = "2021"
+version = "0.1.0"
+rust-version = "1.75"
+authors = ["Tim Koval"]
+repository = "https://github.com/timkoval/aoc-2023"
+license = "MIT OR Apache-2.0"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace.dependencies]
+# Common dependencies to my solvers
+anyhow = "1.0.75"
+good_lp = { version = "1.7.0", features = ["lp-solvers"], default-features = false }
+itertools = "0.12.0"
+md5 = "0.7.0"
+memchr = "2.6.4"
+ndarray = "0.15.6"
+num-integer = "0.1.45"
+permutohedron = "0.2.4"
+pest = "2.7.5"
+pest_derive = "2.7.5"
+petgraph = "0.6.4"
+rustc-hash = "1.1.0"
+serde_json = "1.0.108"
+# Dependencies to create procedural macros
+cargo_toml = "0.17.1"
+quote = "1.0.33"
+syn = "2.0.39"
+clap = { version = "4.4.10", features = ["derive"] }
+thiserror = "1.0.50"
+ureq = { version = "2.9.1", default-features = false, features = ["native-tls"] }
+native-tls = "0" # Let ureq decide the version.
+webbrowser = "0.8.12"
+cached = "0.46.1"
+derivative = "2.2.0"
+field_accessor = "0.5.2"
+regex = "1.10.2"
 
-[dependencies]
