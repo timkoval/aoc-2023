@@ -42,4 +42,6 @@ cached = "0.46.1"
 derivative = "2.2.0"
 field_accessor = "0.5.2"
 regex = "1.10.2"
+z3 = "0.12.1"
+rand = "0.8.5"
 

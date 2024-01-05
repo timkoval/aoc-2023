@@ -57,6 +57,7 @@
               rustfmt
             ])
             pkg-config
+            z3
           ];
 
           # Specify the rust-src path (many editors rely on this)

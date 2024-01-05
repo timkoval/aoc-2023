@@ -16,5 +16,7 @@ derivative.workspace = true
 field_accessor.workspace = true
 num-integer.workspace = true
 regex.workspace = true
+petgraph.workspace = true
+rand.workspace = true
 common = { path = "../common" }
 utils = { path = "../utils" }
